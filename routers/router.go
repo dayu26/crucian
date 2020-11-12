@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"github.com/dayu26/crucian/middleware/jwt"
+
 	"github.com/dayu26/crucian/routers/api"
 	v1 "github.com/dayu26/crucian/routers/api/v1"
 )
