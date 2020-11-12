@@ -1,22 +1,23 @@
 package v1
 
 import (
-	"crucian/pkg/export"
 	"net/http"
 
-	"github.com/EDDYCJY/go-gin-example/service/tag_service"
+	"github.com/dayu26/crucian/pkg/export"
+
 	"github.com/astaxie/beego/validation"
+	"github.com/dayu26/crucian/service/tag_service"
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
-	"github.com/dayu/crucian/pkg/app"
-	"github.com/dayu/crucian/pkg/e"
+	"github.com/dayu26/crucian/pkg/app"
+	"github.com/dayu26/crucian/pkg/e"
 
-	// "github.com/dayu/crucian/pkg/export"
-	"github.com/dayu/crucian/pkg/logging"
-	"github.com/dayu/crucian/pkg/setting"
-	"github.com/dayu/crucian/pkg/util"
-	// "github.com/dayu/crucian/service/tag_service"
+	// "github.com/dayu26/crucian/pkg/export"
+	"github.com/dayu26/crucian/pkg/logging"
+	"github.com/dayu26/crucian/pkg/setting"
+	"github.com/dayu26/crucian/pkg/util"
+	// "github.com/dayu26/crucian/service/tag_service"
 )
 
 // GetTags get tag from db

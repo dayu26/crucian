@@ -7,16 +7,15 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/dayu/crucian/models"
-	"github.com/dayu/crucian/pkg/logging"
-	"github.com/dayu/crucian/pkg/setting"
-	"github.com/dayu/crucian/pkg/util"
-	"github.com/dayu/crucian/routers"
+	"github.com/dayu26/crucian/pkg/logging"
+	"github.com/dayu26/crucian/pkg/setting"
+	"github.com/dayu26/crucian/pkg/util"
+	"github.com/dayu26/crucian/routers"
 )
 
 func init() {
 	setting.Setup()
-	models.Setup()
+	// models.Setup()
 	logging.Setup()
 	// gredis.Setup()
 	util.Setup()
@@ -42,7 +41,7 @@ func main() {
 
 	// add by dayu
 	// snowflake
-	log.Println("SFID:", models.GetID())
+	// log.Println("SFID:", models.GetID())
 
 	log.Printf("[info] start http server listening %s", endPoint)
 	server.ListenAndServe()

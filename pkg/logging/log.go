@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/dayu/crucian/pkg/file"
+	"github.com/dayu26/crucian/pkg/file"
 )
 
 type Level int

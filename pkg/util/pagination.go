@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
-	"github.com/dayu/crucian/pkg/setting"
+	"github.com/dayu26/crucian/pkg/setting"
 )
 
 // GetPage get page parameters

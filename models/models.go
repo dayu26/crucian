@@ -10,7 +10,7 @@ import (
 
 	"time"
 
-	"github.com/dayu/crucian/pkg/setting"
+	"github.com/dayu26/crucian/pkg/setting"
 
 	"github.com/bwmarrin/snowflake"
 )

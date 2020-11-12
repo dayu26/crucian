@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dayu/crucian/pkg/setting"
+	"github.com/dayu26/crucian/pkg/setting"
 )
 
 // getLogFilePath get the log file save path

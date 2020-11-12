@@ -1,7 +1,7 @@
 package export
 
 // import "github.com/EDDYCJY/go-gin-example/pkg/setting"
-import "github.com/dayu/crucian/pkg/setting"
+import "github.com/dayu26/crucian/pkg/setting"
 
 const EXT = ".xlsx"
 

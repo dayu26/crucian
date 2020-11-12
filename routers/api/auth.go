@@ -6,10 +6,10 @@ import (
 	"github.com/astaxie/beego/validation"
 	"github.com/gin-gonic/gin"
 
-	"github.com/dayu/crucian/pkg/app"
-	"github.com/dayu/crucian/pkg/e"
-	"github.com/dayu/crucian/pkg/util"
-	"github.com/dayu/crucian/service/auth_service"
+	"github.com/dayu26/crucian/pkg/app"
+	"github.com/dayu26/crucian/pkg/e"
+	"github.com/dayu26/crucian/pkg/util"
+	"github.com/dayu26/crucian/service/auth_service"
 )
 
 type auth struct {

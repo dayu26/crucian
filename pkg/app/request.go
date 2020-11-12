@@ -3,7 +3,7 @@ package app
 import (
 	"github.com/astaxie/beego/validation"
 
-	"github.com/dayu/crucian/pkg/logging"
+	"github.com/dayu26/crucian/pkg/logging"
 )
 
 // MarkErrors logs error logs

@@ -1,6 +1,6 @@
 package util
 
-import "github.com/dayu/crucian/pkg/setting"
+import "github.com/dayu26/crucian/pkg/setting"
 
 // Setup Initialize the util
 func Setup() {

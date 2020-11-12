@@ -6,7 +6,7 @@ import (
 	"github.com/astaxie/beego/validation"
 	"github.com/gin-gonic/gin"
 
-	"github.com/dayu/crucian/pkg/e"
+	"github.com/dayu26/crucian/pkg/e"
 )
 
 // BindAndValid binds and validates data
