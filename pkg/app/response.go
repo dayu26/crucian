@@ -1,6 +1,8 @@
 package app
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 
 	"github.com/dayu26/crucian/pkg/e"
@@ -17,11 +19,35 @@ type Response struct {
 }
 
 // Response setting gin.JSON
-func (g *Gin) Response(httpCode, errCode int, data interface{}) {
-	g.C.JSON(httpCode, Response{
-		Code: errCode,
-		Msg:  e.GetMsg(errCode),
+// func (g *Gin) Response(httpCode, errCode int, data interface{}) {
+// g.C.JSON(httpCode, Response{
+// Code: errCode,
+// Msg:  e.GetMsg(errCode),
+// Data: data,
+// })
+// return
+// }
+
+func Json(c *gin.Context, httpCode, code int, data interface{}) {
+	c.JSON(httpCode, Response{
+		Code: code,
+		Msg:  e.GetMsg(code),
 		Data: data,
 	})
-	return
+}
+
+func JsonSuccess(c *gin.Context, code int, data interface{}) {
+	c.JSON(http.StatusOK, Response{
+		Code: code,
+		Msg:  e.GetMsg(code),
+		Data: data,
+	})
+}
+
+func JsonError(c *gin.Context, code int, data interface{}) {
+	c.JSON(http.StatusInternalServerError, Response{
+		Code: code,
+		Msg:  e.GetMsg(code),
+		Data: data,
+	})
 }
