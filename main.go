@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -43,7 +42,7 @@ func main() {
 	// snowflake
 	// log.Println("SFID:", models.GetID())
 
-	log.Printf("[info] start http server listening %s", endPoint)
+	logging.Info("[info] start http server listening %s", endPoint)
 	server.ListenAndServe()
 
 	// If you want Graceful Restart, you need a Unix system and download github.com/fvbock/endless
